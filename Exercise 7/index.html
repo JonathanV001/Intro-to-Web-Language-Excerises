@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <!--creates text input block-->
+    <input id="name-input" type="text" placeholder="Enter your name" />
+    <!--creates button-->
+    <button id="my-button">Click Me</button>
+     <!--opening script tag-->
+    <script>
+        //javascript variable button is used to track when the button is pushed
+        var myButton = document.querySelector('#my-button');
+        //javascript variable nameInput is used to store that the user puts in the 
+        //text-field
+        var nameInput = document.querySelector('#name-input');
+        
+        //eventlistener waits for a click on the button to happen
+        myButton.addEventListener('click', function () {
+            //if user does not input nothing
+            if (nameInput.value !== '') {
+                //send alert that reads hello and the name the user inputs
+                alert('Hello ' + nameInput.value);
+            }
+        });
+        //closing script tag
+    </script>
+</body>
+</html>

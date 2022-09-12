@@ -1,0 +1,13 @@
+body {
+  background-color: cyan;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#main-title {
+  text-align: center;
+}
+
+.content {
+  display: block;
+  margin-bottom: 12px;
+}
